@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# redirecting SQL output to a variable
+#
+MYSQL=$(which mysql)
+#
+dbs=$($MYSQL mytest -u test -Bse 'SHOW DATABASES;')
+#
+for db in $dbs
+do
+    echo $db
+done
+#
+exit

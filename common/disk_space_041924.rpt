@@ -1,0 +1,26 @@
+Top Ten Disk Space Usage
+for /var/log /home Directories
+
+The /var/log Directory:
+1:	3634364	/var/log/journal/fbd1924759d34246a132c49fd4297bf7
+2:	94756	/var/log/pods/kube-system_etcd-wsl-ubuntu20.04_706e1b32745a18aabee0985c52b12773/etcd
+3:	16052	/var/log/pods/kube-system_kube-apiserver-wsl-ubuntu20.04_51f8fa8c5474e89cbab7f1727b6481e7/kube-apiserver
+4:	11556	/var/log/pods/kube-system_kube-controller-manager-wsl-ubuntu20.04_eef7b35fd60ca4d5f46a9c91b4f2dc1f/kube-controller-manager
+5:	6600	/var/log/installer
+6:	3812	/var/log/calico/cni
+7:	2936	/var/log/pods/calico-system_calico-typha-fb98d6f48-x26kp_36c64376-a3d5-4cf2-a109-534003263cf1/calico-typha
+8:	2792	/var/log/pods/calico-apiserver_calico-apiserver-8846fd76c-jznkt_4b641d69-e75d-4c6f-b3c5-1d8a7ea085a7/calico-apiserver
+9:	2780	/var/log/pods/calico-system_calico-node-qlj4f_a9821bfc-f7ab-4f35-b8fe-cc9a69f18967/calico-node
+10:	2496	/var/log/pods/calico-apiserver_calico-apiserver-8846fd76c-tthc2_2efbd87e-2c16-4b6f-a3c1-1c799d7d5a8b/calico-apiserver
+
+The /home Directory:
+1:	1092324	/home/cxh/iac-code/.git/objects/pack
+2:	959764	/home/cxh/.vscode-server/data/CachedExtensionVSIXs
+3:	908036	/home/cxh/101/.git/objects/pack
+4:	601556	/home/cxh/notes/.git/objects/pack
+5:	403092	/home/cxh/.cache/trivy/db
+6:	271108	/home/cxh/.kube/cache/http
+7:	221188	/home/cxh/notes/SRE/DevOps
+8:	184440	/home/cxh/.vscode-server/extensions/ms-dotnettools.csharp-2.23.15-linux-x64/.debugger
+9:	176160	/home/cxh/iac-code/iac/week-2/.terraform/providers/registry.terraform.io/tencentcloudstack/tencentcloud/1.81.5/linux_amd64
+10:	176156	/home/cxh/.terraform.d/plugin_cache/registry.terraform.io/tencentcloudstack/tencentcloud/1.81.5/linux_amd64

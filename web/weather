@@ -1,0 +1,18 @@
+#!/bin/bash
+#
+# extract the current weather for Chicago, IL
+#
+URL="http://weather.yahoo.com/united-states/illinois/chicago-2379574"
+LYNX=$(which lynx)
+TMPFILE=$(mktemp tempXXXXXX)
+#
+$LYNX -dump $URL > $TMPFILE
+#
+conditions=$(cat $TMPFILE | sed -n '/\[31\]Manage locations/{n ; n ; p}')
+temp=$(cat $TMPFILE | sed -n '/(BUTTON) F (BUTTON) C/{p}' | awk '{print $1}')
+rm -rf $TMPFILE
+#
+echo "Current conditions: $conditions"
+echo The current temp outside is: $temp
+#
+exit

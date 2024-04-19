@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# send a command to the MySQL Server
+#
+MYSQL=$(which mysql)
+#
+$MYSQL mytest -u test -e 'SELECT * FROM employees;'
+#
+exit

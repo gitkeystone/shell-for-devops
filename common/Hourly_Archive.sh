@@ -24,6 +24,7 @@ mkdir -p $BASEDEST/$MONTH/$DAY
 # Build Archive Destination File Name
 #
 DESTINATION=$BASEDEST/$MONTH/$DAY/archive$TIME.tar.gz
+#
 ########## Main Script #################################
 #
 # Check Backup Config file exists
